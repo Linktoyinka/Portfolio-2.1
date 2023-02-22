@@ -18,13 +18,14 @@ body {
 /* COLOR DEFINITION */
 
 :root {
-    --purple: #0F1624;
     --white: white;
     --off-white: #BCBCBC;
     --grey: #E0E0E0;
     --black: #000000;
     --border: #0000001c;
     --border-2: #00000041;
+
+    --primary: #2A4096;
 }
 
 /* TEXT DEFINITION */
@@ -40,14 +41,18 @@ h2 {
     font-size: 30px;
     font-weight: 800;
     width: fit-content;
-    
+    position: relative;
 }
 
 h2::after {
-    display: flex;
-    content: " ";
-    border-top: 4px solid var(--black);
-    width: 50%;
+    content: "";
+    position: absolute;
+    background-color: var(--black);
+    width: 40%;
+    height: 3px;
+    left: 0;
+    bottom: -3px;
+
 }
 
 h4 {
@@ -67,24 +72,56 @@ h3 {
 
 p {
     font-size: 20px;
-    font-weight: 200;
+    font-weight: 300;
     line-height: 30px;
     letter-spacing: 0em;
     text-align: justify;
     color: var(--black);
 }
 
+a {    
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 17px;
+    color: var(--black);
+}
+
+.link {
+    position: relative;
+}
+
+.link::after {
+    content: "";
+    position: absolute;
+    background-color: var(--black);
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -5px;
+    transition: .3s;
+}
+
+.link:hover:after {
+    width: 100%;
+}
+
+
+
+/* DEFAULT */
+section {
+    padding: 20px 10%;
+}
 
 /* HEADER STYLE */
 
 header {
-    padding: 1% 10%;
+    padding: 10px 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--purple);
+    background-color: var(--black);
 
-    box-shadow: 0 0 1px #8a9dc2;
+    box-shadow: 0 0 2px #8a9dc2;
 }
 
 .logo-text {
@@ -99,7 +136,6 @@ header a {
     color: var(--white);
     text-transform: capitalize;
     font-weight: 500;
-    /* font-size: 30px; */
 }
 
 header ul {
@@ -120,12 +156,14 @@ nav {
     align-items: center;
 }
 
+
 /* HERO SECTION STYLE */
 
 .hero {
     padding: 50px 10%;
     display: flex;
     background-color: var(--grey);
+    align-items: center;
 
     background-image: url(./assets/drawing.png);
     background-repeat: no-repeat;
@@ -139,52 +177,55 @@ nav {
 
 .hero .right {
     width: 40%;
+    text-align: center;
 }
 
 .hero-btn {
-    padding: 2%;
     display: flex;
     gap: 5%;
     align-items: center;
+    margin-top: 15px;
 }
 
 .pri-btn {
     text-decoration: none;
-    color: #13ADC7;
-    font-size: larger;
+    color: var(--black);
+    font-size: 20px;
     font-weight: 700;
 }
 
 .pri-btn:hover {
-    text-decoration: none;
-    color: #9cdce7;
-    font-size: larger;
     font-weight: 700;
 }
 
 .pri-btn::after {
-    content: "";
-    border-top: 2px solid var(--white);
-    width: 60%;
-
-    display: flex;
+    width: 35%;
 }
 
 .sec-btn {
     text-decoration: none;
-    background-color: #13ADC7;
-    font-size: larger;
+    background-color: var(--black);
+    font-size: 20px;
     font-weight: 700;
-    padding: 6px 5%;
+    padding: 6px 25px;
     color: var(--white);
     border-radius: 20px;
-    /* background-color: ; */
+}
+
+.sec-btn:hover {
+    /* box-shadow: 0 0 10px var(--black); */
+}
+
+.hero .right img {
+    width: 70%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 100%;
 }
 
 /* SKILL SECTION */
 
 .skills {
-    padding: 20px 10%;
     display: flex;
     justify-content: space-between;
 }
@@ -215,16 +256,13 @@ nav {
     font-size: 14px;
     font-weight: 200;
     line-height: 14px;
-    
-    /* margin-top: 1%; */
     text-align: unset;
-
 }
 
 /* PROJECT SECTION */
 
 .project {
-    padding: 50PX 10%;
+    margin: 20px 0;
 }
 
 .project-list  {
@@ -235,7 +273,7 @@ nav {
 
 .project-list .card {
     width: 48%;
-    margin-top: 5%;
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
 }
@@ -278,10 +316,6 @@ nav {
     font-weight: 500;
 }
 
-.pd-text p {
-    margin: 10px 0;
-}
-
 .project-list .card .right {
     width: 53%;
     padding: 2% 0;
@@ -289,6 +323,10 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.pd-text p {
+    margin: 10px 0;
 }
 
 .project-description {
@@ -299,6 +337,240 @@ nav {
 }
 
 .project-btn {
+    display: flex;
+    gap: 10%;
+}
+
+.project .view-all {
+    text-align: center;
+    margin: 50px 0 0 0;
+}
+
+
+/* CONTACT SECTION */
+
+.contact-section {
+    background-color: var(--border);
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 1115px) {
+    section {
+        padding: 20px 5%;
+    }
+
+    header {
+        padding: 10px 5%;
+    }
+
+    .hero {
+        padding: 50px 5%;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 25px;        
+    }
+
+    a {
+        font-size: 15px;
+    }
+
+    .link::after {
+        height: 2px;
+        bottom: -3px;
+    }
+
+    .pri-btn {
+        font-size: 18px;
+    }
+
+    .sec-btn {
+        font-size: 18px;
+    }
+
+    .skill-p {
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    .project-description {
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+    .pri-btn {
+        font-size: 16px;
+    }
+
+    .sec-btn {
+        font-size: 16px;
+    }
+
+    .skills {
+        flex-wrap: wrap;
+    }
+
+    .skill-set {
+        width: 48%;
+        margin-top: 15px;
+    }
+
+    .project-list .card {
+        flex-direction: column;
+    }
+
+    .project-list .card .left {
+        width: 100%;
+    }
+
+    .project-list .card .right {
+        width: 100%;
+    }
+
+    .hero .right img {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    .hero {
+        flex-wrap: wrap;
+    }
+
+    .hero .left {
+        width: 100%;
+        order: 1;
+        text-align: center;
+        margin-top: 20px;
+    }
     
+    .hero .right {
+        width: 100%;
+    }
+
+    .hero .right img {
+        width: 50%;
+    }
+
+    .hero-btn {
+        justify-content: center;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    .skill-set {
+        width: 48%;
+        margin-top: 15px;
+    }
+
+    .project-list .card {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .project-list .card .left {
+        width: 45%;
+    }
+
+    .project-list .card .right {
+        width: 53%;
+    }
+
+}
+
+
+@media screen and (max-width: 390px) {
+    h1 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    h4 {
+        font-size: 11.5px;
+    }
+
+   p {
+        font-size: 16px;
+        line-height: 23px;  
+        font-weight: 400;      
+    }
+
+    a {
+        font-size: 14px;
+    }
+
+    .skill-p {
+        font-size: 11px;
+    }
+
+    .skill-set {
+        width: 48%;
+        margin-top: 15px;
+    }
+
+    .project-list .card {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .project-list .card .left {
+        width: 100%;
+    }
+
+    .project-list .card .right {
+        width: 100%;
+    }
+
+    .card-img{
+        width: 80%;
+        text-align: center;
+    }
+
+    .project-btn {
+        justify-content: center;
+    }
+
+    .skill-set img {
+        width: 20px;
+    }
+
 }
 
