@@ -5,24 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <!-- <script src="https://kit.fontawesome.com/456f9bbaa5.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/456f9bbaa5.js" crossorigin="anonymous"></script>
     <title>Afolabi Abdullahi | Translating Creativity Into Code</title>
+    <link rel="shortcut icon" href="/assets/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header>
         <div class="header">
             <div class="logo">
-                <a href="#">
+                <a href="#home">
                     <img src="/assets/logo.svg" alt="logo">
                 </a>
             </div>
     
             <nav class="nav-menu">
                 <ul>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">works</a></li>
-                    <li><a href="#">contact</a></li>
-                    <li><a class="pri-btn" href="#">Resume</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#works">works</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <li><a class="sec-btn" href="#" target="_blank">Resumé</a></li>
                 </ul>
             </nav>
 
@@ -36,62 +38,341 @@
                 <li><a href="#">home</a></li>
                 <li><a href="#">projects</a></li>
                 <li><a href="#">contact me</a></li>
-                <li><a class="pri-btn" href="#">Resume</a></li>
+                <li><a class="pri-btn" href="#" target="_blank">Resume</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
 
-        <section class="hero">
-            <p>
+        <section id="home" class="hero">
+            <p data-aos="slide-up">
                 Hi, my name is
             </p>
 
-            <h1>
+            <h1 data-aos="slide-up">
                 Afolabi Abdullahi.
             </h1>
 
-            <h1>
+            <h1 data-aos="slide-up">
                 I translate creativity into code.
             </h1>
 
-            <p>
+            <p data-aos="slide-up">
                 I am a skilled and dedicated front-end developer based in Nigeria. With a passion for
                 creating beautiful and functional user interfaces.
             </p>
 
-            <a href="#"><button class="pri-btn">Say Hello!</button></a>
+            <a href="#contact"><button data-aos="slide-up" class="pri-btn">Say Hello!</button></a>
         </section>
 
-        <section class="about">
-            <div class="left">
+        <section id="about" class="about">
+            <div data-aos="fade-up" class="left">
                 <img src="/assets/Adekunle Omole (1).png" alt="Afolabi Abdullahi">
             </div>
 
             <div class="right">
-                <h2 class="tag-before">
+                <h2 data-aos="fade-up" class="tag-before">
                     About Me
                 </h2>
 
-                <p>
+                <p data-aos="fade-up">
                     I have a  keen eye for detail and a commitment to crafting elegant and intuitive designs that provide users with seamless experiences. This makes me in constant seeking out for new technologies and best practices to ensure that my work is always at the cutting edge of front-end development.
                 </p>
 
-                <p>
+                <p data-aos="fade-up">
                     Since my introduction into the industry, I have honed my ability to collaborate with cross-functional teams and communicate effectively with peers to ensure their needs are met. I am a problem solver, always striving to find the most effective and efficient solution to any challenge he encounters.
                 </p>
 
-                <p>
+                <p data-aos="fade-up">
                     Recently, I've worked with the following technologies:
                 </p>
+
+                <div data-aos="fade-up" class="tech">
+                    <ul>
+                        <li>Html and Css</li>
+                        <li>WordPress</li>
+                        <li>JavaScript (ES6+)</li>
+                    </ul>
+    
+                    <ul>
+                        <li>BootStrap</li>
+                        <li>Tailwind</li>
+                        <li>ReactJS</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="works" class="featured">
+            <h2 data-aos="fade-up" class="tag-after">
+                Featured Projects
+            </h2>
+
+            <div class="featured-tile">
+                <div data-aos="fade-up" class="left">
+                    <div class="img-container">
+                        <img src="/assets/Screenshot (77).png" alt="">
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" class="right">
+                    <a href="#">
+                        <h3>
+                            Portfolio
+                        </h3>
+                    </a>
+
+                    <p>
+                        Since my introduction into the industry, I have honed my ability to collaborate with cross-functional teams and communicate effectively with peers to ensure their needs are met. I am a problem solver, always striving to find the most effective and efficient solution to any challenge he encounters.
+                    </p>
+
+                    <p class="used-t">
+                        Html • Css • JavaScript
+                    </p>
+
+                    <div class="open">
+                        <a href="#" target="_blank">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="featured-tile">
+                <div data-aos="fade-up" class="left">
+                    <div class="img-container">
+                        <img src="/assets/Screenshot (77).png" alt="">
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" class="right">
+                    <a href="#">
+                        <h3>
+                            Portfolio
+                        </h3>
+                    </a>
+
+                    <p>
+                        Since my introduction into the industry, I have honed my ability to collaborate with cross-functional teams and communicate effectively with peers to ensure their needs are met. I am a problem solver, always striving to find the most effective and efficient solution to any challenge he encounters.
+                    </p>
+
+                    <p class="used-t">
+                        Html • Css • JavaScript
+                    </p>
+
+                    <div class="open">
+                        <a href="#" target="_blank">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="featured-tile">
+                <div data-aos="fade-up" class="left">
+                    <div class="img-container">
+                        <img src="/assets/Screenshot (77).png" alt="">
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" class="right">
+                    <a href="#">
+                        <h3>
+                            Portfolio
+                        </h3>
+                    </a>
+
+                    <p>
+                        Since my introduction into the industry, I have honed my ability to collaborate with cross-functional teams and communicate effectively with peers to ensure their needs are met. I am a problem solver, always striving to find the most effective and efficient solution to any challenge he encounters.
+                    </p>
+
+                    <p class="used-t">
+                        Html • Css • JavaScript
+                    </p>
+
+                    <div class="open">
+                        <a href="#" target="_blank">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
 
+        <section class="other-projects">
+            <h2 data-aos="fade-up" class="title">
+                Additional Notable Projects
+            </h2>
+
+            <div class="op-tile">
+
+                <div data-aos="fade-up" class="op-card">
+                    <div class="imgbx">
+                        <img src="/assets/Adekunle Omole (1).png" alt="">
+                    </div>
+
+                    <div class="op-card-others">
+
+                        <a href="#" target="_blank">
+                            <h3>
+                                Portfolio
+                            </h3>
+                        </a>
+
+                        <p>
+                            Since my introduction into the industry, I have honed my ability to collaborate with cross-functional teams and.
+                        </p>
+
+                        <p class="used-t">
+                            Html • Css • JavaScript
+                        </p>
+    
+                        <div class="open">
+                            <a href="#" target="_blank">
+                                <i class="fa-solid fa-up-right-from-square"></i>
+                            </a>
+    
+                            <a href="#" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" class="op-card">
+                    <div class="imgbx">
+                        <img src="/assets/Adekunle Omole (1).png" alt="">
+                    </div>
+
+                    <div class="op-card-others">
+
+                        <a href="#" target="_blank">
+                            <h3>
+                                Portfolio
+                            </h3>
+                        </a>
+
+                        <p>
+                            Since my introduction into the industry, I have honed my ability to collaborate with cross-functional teams and.
+                        </p>
+
+                        <p class="used-t">
+                            Html • Css • JavaScript
+                        </p>
+    
+                        <div class="open">
+                            <a href="#" target="_blank">
+                                <i class="fa-solid fa-up-right-from-square"></i>
+                            </a>
+    
+                            <a href="#" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div data-aos="fade-up"class="op-card">
+                    <div class="imgbx">
+                        <img src="/assets/Adekunle Omole (1).png" alt="">
+                    </div>
+
+                    <div class="op-card-others">
+
+                        <a href="#" target="_blank">
+                            <h3>
+                                Portfolio
+                            </h3>
+                        </a>
+
+                        <p>
+                            Since my introduction into the industry, I have honed my ability to collaborate with cross-functional teams and.
+                        </p>
+
+                        <p class="used-t">
+                            Html • Css • JavaScript
+                        </p>
+    
+                        <div class="open">
+                            <a href="#" target="_blank">
+                                <i class="fa-solid fa-up-right-from-square"></i>
+                            </a>
+    
+                            <a href="#" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="p-btn">
+                <a href="#"><button class="pri-btn">View all projects</button></a>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="contact-tile">
+                
+                <h2 data-aos="slide-up">
+                    Get  In Touch
+                </h2>
+
+                <p data-aos="slide-up">
+                    Ready to enhance your user experience and drive engagement? Contact me to see how my front-end development skills can make a difference for your business
+                </p>
+
+                <a href="#"><button data-aos="slide-up" class="pri-btn">Let’s Do This</button></a>
+            </div>
+        </section>
 
     </main>
 
-    
+    <footer>
+        <small>
+            Designed and developed by Afolabi
+        </small>
+
+        <div class="footer-socials">
+            <a href="#">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            
+            <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            
+            <a href="#">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 <script src="script.js"></script>
 </html>
