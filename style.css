@@ -440,6 +440,14 @@ small {
 }
 
 
+/* PROJECT PAGE */
+
+
+.p-op-card{
+    margin: 1.5% 0;
+}
+
+
 
 
 
@@ -534,6 +542,13 @@ small {
         width: 48%;
         margin-bottom: 35px;
     }
+
+    /* PROJECT PAGE */
+
+
+    .p-op-card{
+        margin: 1.5% 0;
+    }
 }
 
 
@@ -574,5 +589,13 @@ small {
 
     .footer-socials {
         justify-content: center;
+    }
+
+
+    /* PROJECT PAGE */
+
+
+    .p-op-card{
+        margin: 2% 0;
     }
 }
