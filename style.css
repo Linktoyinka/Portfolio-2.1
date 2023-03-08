@@ -509,6 +509,10 @@ small {
         /* aspect-ratio: 1/1; */
     }
 
+    .featured-tile {
+        gap: 10px;
+    }
+
     .featured-tile .right {
         width: 100%;
     }
