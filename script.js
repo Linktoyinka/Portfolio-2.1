@@ -6,3 +6,10 @@ main_menu.addEventListener('click', function(){
     mobile_menu.classList.toggle('is-active');
 });
 
+const loader = document.querySelector(".loader")
+
+window.addEventListener("load", vanish);
+
+function vanish() {
+  loader.classList.add("disppear");
+}
