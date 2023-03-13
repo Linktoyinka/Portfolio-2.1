@@ -295,6 +295,10 @@ nav {
     margin-top: 10px;
 }
 
+.abt {
+    margin: 15px 0;
+}
+
 .tech li {
     list-style: inside;
     list-style-type: square;
