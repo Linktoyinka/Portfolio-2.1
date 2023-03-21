@@ -5,6 +5,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+    /* border: 2px solid red; */
 }
 
 body {
@@ -96,6 +97,10 @@ a {
     text-decoration: none;
 }
 
+a>* {
+    display: inline;
+}
+
 .pri-btn {
     padding: 7px 25px;
     color: var(--secondary);
@@ -176,7 +181,7 @@ nav {
     direction: ltr;
     right: 100%;
     transition: 0.4s;
-    top: auto;
+    top: 70px;
 
 
 }
