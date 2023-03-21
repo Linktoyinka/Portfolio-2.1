@@ -237,7 +237,7 @@ nav {
 /* HERO SECTION STYLE */
 .hero {
     padding: 100px 10%;
-    background-image: linear-gradient(#011936b4,#011936b4), url(/assets/herobg.png);
+    background-image: linear-gradient(#011936b4,#011936b4), url(/assets/herobg.webp);
     background-position: center;
     background-size: cover;
 
