@@ -654,3 +654,27 @@ small {
     margin: 2% 0;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  section,
+  .header,
+  footer, .hero {
+    width: 100%;
+    max-width: 1500px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  section {
+    padding: 2% 110px;
+  }
+  .header,
+  footer {
+    padding: 10px 110px;
+  }
+
+  .hero {
+    padding: 100px 110px;
+  }
+  
+}
