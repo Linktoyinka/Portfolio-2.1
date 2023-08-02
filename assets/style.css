@@ -661,11 +661,15 @@ small {
 @media screen and (min-width: 1440px) {
   section,
   .header,
-  .footer, .hero {
+  .footer, .home {
     width: 100%;
     max-width: 1500px;
     margin-right: auto;
     margin-left: auto;
+  }
+
+  .hero {
+    max-width: unset;
   }
 
   section {
