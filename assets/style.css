@@ -478,9 +478,12 @@ nav {
 }
 
 /* FOOTER STYLE */
-footer {
-  padding: 3px 5%;
+footer{  
   background-color: var(--secondary);
+}
+
+.footer {
+  padding: 3px 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -658,7 +661,7 @@ small {
 @media screen and (min-width: 1440px) {
   section,
   .header,
-  footer, .hero {
+  .footer, .hero {
     width: 100%;
     max-width: 1500px;
     margin-right: auto;
@@ -675,6 +678,10 @@ small {
 
   .hero {
     padding: 100px 110px;
+  }
+
+  body {
+    background: var(--primary);
   }
   
 }
